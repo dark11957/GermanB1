@@ -17,7 +17,7 @@ Counts come from actual source files, not the curriculum map: **13 complete less
 | Verb, vocabulary, expressions | 34 searchable structured principal-part records for L10–L12; lesson-local vocabulary | Expand searchable verb atlas across A1–B1; build thematic vocabulary and expressions libraries |
 | Website and learner tools | Eleventy static HTML, responsive base, chapter/lesson navigation, native answer reveals, browser-local completion, progress export/import, mistake-list page, curriculum and verb search | Flashcards, exercise grading with open-answer guidance, mistake capture/filter/review, complete reference search |
 | Print | A4 CSS, shared lesson source, Chapter 1–4 pages, print-ready 34-entry verb edition | Render and inspect actual PDFs, complete handbook editions, separately collated solutions |
-| Deployment | Pages Actions workflow is configured for repo subpath. User previously confirmed working deployment; prior published lesson, reference, assessment and print routes returned HTTP 200 | Confirm build/deploy and route checks after this Chapter 4 push |
+| Deployment | GitHub Actions run [39168678951](https://github.com/dark11957/GermanB1/actions/runs/39168678951) passed build, validator and Pages deployment for `c5575fb`; L10–L12, past-narration reference, verb atlas, Chapter 4 print, verb print and print hub all returned HTTP 200 | Inspect desktop/mobile and actual PDFs when a browser/PDF renderer is available |
 | Authoritative sources | Duden case, noun, preposition, Perfekt, verb class and als/wenn pages checked on 2026-10-18 | Verify CEFR/Goethe benchmarks, learning research, DW listening approach and current telc format before using them |
 
 ## Completed in this batch
@@ -33,7 +33,8 @@ Counts come from actual source files, not the curriculum map: **13 complete less
 - Static lesson scan: **13/13** source files contain all twelve required lesson sections and at least twelve second-level sections.
 - Chapter 4 content scan: reading texts **151, 181 and 168 words**; **16** vocabulary rows each; **15, 14 and 14** exercise items; 34 verb entries are unique.
 - Source symlinks exist for L10–L12 and both grammar reference pages. `git diff --check` passed before staging.
-- Eleventy build, automated validator and deployment: pending for this batch. Node/npm are not installed locally; use GitHub Actions for the build, as on the last published batches.
+- Eleventy build, automated validator and deployment: **passed remotely** for `c5575fb` in run 39168678951. The CI validation command checked lesson sections, identifiers, source links, A1–B1 reading lengths, exercise counts and verb-entry uniqueness. Node/npm are not installed locally, so the commands could not be repeated in this workspace.
+- Live checks after deployment: L10–L12, the past-narration guide, verb atlas, Chapter 4 print route, verb print route and print hub returned HTTP 200. The verb atlas rendered all 34 table entries and repository-subpath lesson links.
 - Browser layout and actual PDF checks: unavailable here; print routes are HTML and no PDF is claimed verified.
 
 ## Known issues
