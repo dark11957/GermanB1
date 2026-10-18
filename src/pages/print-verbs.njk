@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Verb reference · A2 past forms
+description: Print edition of the growing verb principal-parts reference.
+permalink: /print/verbs/index.html
+---
+<h2>A2 · Past narration</h2><p>Principal parts used in L10–L12. Learn each verb with its auxiliary and an example.</p><table class="verb-table"><thead><tr><th>Infinitive</th><th>Meaning</th><th>Present (3sg)</th><th>Präteritum</th><th>Partizip II</th><th>Auxiliary</th><th>Pattern</th><th>Example</th></tr></thead><tbody>{% for verb in verbs %}<tr><th scope="row">{{ verb.infinitive }}</th><td>{{ verb.meaning }}</td><td>{{ verb.present }}</td><td>{{ verb.preterite }}</td><td>{{ verb.participle }}</td><td>{{ verb.auxiliary }}</td><td>{{ verb.pattern }}</td><td><em>{{ verb.example }}</em></td></tr>{% endfor %}</tbody></table>

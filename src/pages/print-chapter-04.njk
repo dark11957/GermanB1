@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Chapter 04 — Erinnerungen und Erfahrungen
+description: Print edition of Chapter 04 lessons.
+permalink: /print/chapter-04/index.html
+---
+<h2>C04 · Erinnerungen und Erfahrungen</h2>{% for lesson in collections.lessons %}{% if lesson.data.chapterId == "C04" %}<section class="print-lesson"><div class="lesson"><h1>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h1>{{ lesson.templateContent | safe }}</div></section>{% endif %}{% endfor %}

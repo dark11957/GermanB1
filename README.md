@@ -9,6 +9,7 @@ Requires Node.js 18 or newer.
 ```sh
 npm install
 npm run build
+npm run validate
 npm start
 ```
 

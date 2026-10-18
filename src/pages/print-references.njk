@@ -6,3 +6,4 @@ permalink: /print/references/index.html
 ---
 {% for chapter in chapters %}<section><h2>{{ chapter.id }} · {{ chapter.title }}</h2><p>{{ chapter.grammar }}</p>{% for lesson in chapter.lessons %}<p>{{ lesson.id }} · {{ lesson.title }}</p>{% endfor %}</section>{% endfor %}
 <section><h2>Grammar handbook: the four cases</h2><p><a href="{{ '/references/grammar/cases/' | url }}">Open the complete case reference</a>. For a printed copy, use this link before printing the reference edition.</p></section>
+<section><h2>Past narration</h2><p><a href="{{ '/references/grammar/past-narration/' | url }}">Open the Perfekt, Präteritum and als/wenn guide</a>.</p><p><a href="{{ '/print/verbs/' | url }}">Open the printable verb principal-parts table</a>.</p></section>

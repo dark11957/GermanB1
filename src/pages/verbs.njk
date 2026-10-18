@@ -1,0 +1,10 @@
+---
+layout: base.njk
+title: Verb reference · principal parts
+description: Search German verbs by meaning, present form, Präteritum and Partizip II.
+permalink: /verbs/index.html
+---
+<header class="page-head"><p class="eyebrow">VERB ATLAS · A2 PILOT</p><h1>Verben im Überblick</h1><p class="dek">Learn useful verbs with their principal parts, auxiliary and a contextual example. This initial set supports past narration in Chapter 4; the full A1–B1 atlas will grow with the lessons.</p></header>
+<label class="search-label" for="verb-search">Search infinitive, meaning, past form or lesson</label><input id="verb-search" type="search" placeholder="Try: fahren, arrived, vergessen…">
+<div class="table-scroll"><table class="verb-table"><caption>{{ verbs | length }} A2 verbs · principal parts for L10–L12 narration and revision</caption><thead><tr><th scope="col">Infinitive</th><th scope="col">Meaning</th><th scope="col">Present (er/sie/es)</th><th scope="col">Präteritum</th><th scope="col">Partizip II</th><th scope="col">Perfekt auxiliary</th><th scope="col">Pattern / note</th><th scope="col">Example · lesson</th></tr></thead><tbody>{% for verb in verbs %}<tr data-search="{{ verb.infinitive }} {{ verb.meaning }} {{ verb.present }} {{ verb.preterite }} {{ verb.participle }} {{ verb.auxiliary }} {{ verb.pattern }} {{ verb.lesson }} {{ verb.example }}"><th scope="row"><a href="{{ ('/lessons/' + verb.lesson + '/') | url }}">{{ verb.infinitive }}</a></th><td>{{ verb.meaning }}</td><td>{{ verb.present }}</td><td>{{ verb.preterite }}</td><td>{{ verb.participle }}</td><td>{{ verb.auxiliary }}</td><td>{{ verb.pattern }}</td><td><em>{{ verb.example }}</em> <small>({{ verb.lesson }})</small></td></tr>{% endfor %}</tbody></table></div>
+<p class="notice">Auxiliary choice can depend on the verb’s meaning and use. “Directed trip” is noted for <em>fahren</em>; consult the linked lesson for the rule and its limits. Search filters this table when JavaScript is enabled; all entries remain in the HTML without it.</p>
