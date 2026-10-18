@@ -4,45 +4,48 @@ Last updated: 2026-10-18 (Africa/Tunis)
 
 ## Actual content counts
 
-Static source scan (2026-10-18): **4 complete lesson files out of 54 planned** (L01–L03 and L27); **1 partial assessment file** (Checkpoint 01 currently covers Chapter 1 only). Each authored lesson has all 12 required section markers and 13 second-level sections (the extra section is an introduction/outlook). Counts are from actual files, not the curriculum map. Run `npm run validate` when Node.js is available for the repository validator.
+Counts come from source files rather than the curriculum map: **10 complete lesson files out of 54 planned** (L01–L09 and L27), **1 complete A1 foundations checkpoint draft** for Chapters 1–3, and **1 standalone grammar reference** (four cases). Structural completeness does not substitute for a full editorial audit.
 
-## Completed
+## Plan audit
 
-- Read the complete authoritative specification in `plan.md`; preserved it unchanged.
-- Established an Eleventy + Markdown + Nunjucks source pipeline, shared responsive layout, chapter map, A4 stylesheet, GitHub Pages workflow configuration, print-view routes, and browser-local lesson completion with progress export/import.
-- Authored full-depth lesson source for L01 (A1) and L27 (B1), with original reading text and all twelve required lesson components, including answer explanations.
-- Continued Chapter 1 with full-depth L02 and L03 lesson sources and an explicitly partial Chapter 1 review section in Checkpoint 01.
-- Added honest content availability labels so unwritten lessons are not presented as complete.
+| Plan requirement | Present now | Still needed |
+|---|---|---|
+| 18 chapters / 54 lessons | Metadata and navigation for all planned lessons; 10 full lesson sources | Write 44 lessons; finish and check chapters sequentially |
+| Full lesson structure | All ten lesson files include original text/dialogue, comprehension, contextual vocabulary, grammar, varied exercises, translation, original production, writing, speaking, listening/pronunciation, revision and solutions | Preserve the standard and review earlier lessons in final quality assurance |
+| Assessments | Checkpoint 01 reviews Chapters 1–3 with grammar, vocabulary, reading, sentence construction, writing/speaking and topic guidance | Diagnostic, Checkpoints 02–06, B1 readiness and B2 transition assessments |
+| Grammar library | Four-case reference; L01–L09 teach planned foundation topics | Expand into the complete linked A1–B1 grammar handbook |
+| Verb, vocabulary, expressions references | Lesson-local vocabulary and verb patterns | Searchable verb atlas, thematic vocabulary and expressions libraries, metadata and lesson cross-links |
+| Website and learner tools | Eleventy static HTML; responsive layout; 54-item course map; authored lesson navigation; native answer reveals; browser-local completion; progress export/import; mistake-list view | Full library search; interactive exercise grading and open-answer guidance; flashcards; mistake capture/filter/review |
+| Print | A4 stylesheet; shared Markdown lesson sources; authored textbook view and Chapter 1–3 exports; answer reveal rules for `.solution` blocks | Build and inspect actual PDFs; confirm tables/page breaks/German glyphs; complete reference editions and separately organized solution key |
+| Deployment | User confirms Pages site works at `https://dark11957.github.io/GermanB1/`; Actions workflow includes repository-subpath support | Run the workflow for the latest changes after push; independently verify URL when network DNS is available |
+| References | Duden case, noun and preposition pages checked for this batch on 2026-10-18 | Verify CEFR/Goethe benchmarks, research reference, DW listening approach and current telc format before related content is authored |
 
-## Remaining
+## Completed in this batch
 
-- Author and review L04–L26 and L28–L54 in chapter-sized batches; complete each chapter's assessment before marking it done.
-- Author the diagnostic, six cumulative checkpoints, B1 readiness assessment, and B2 transition assessment.
-- Build the comprehensive grammar handbook, searchable verb atlas, thematic vocabulary and expressions libraries, with source-checked coverage and lesson links.
-- Finish interactive exercise grading, mistake capture/filtering, flashcards, and complete search across all libraries.
-- Generate and inspect actual A4 PDF output (A1, B1 and multi-chapter), including page breaks, tables, German glyphs and answer visibility.
-- Run the build and validator, inspect desktop/mobile output, and verify a GitHub Pages Actions deployment and URL.
+- Authored Chapter 2: L04 (accusative), L05 (dative), and L06 (two-object verbs).
+- Authored Chapter 3: L07 (modals, separable verbs, imperative), L08 (time and common prepositions), and L09 (two-way prepositions and location/destination).
+- Added original comprehension, 15 contextual vocabulary items in each new Chapter 3 lesson, 12–14 varied practice items per lesson, model translations, productive work, partner activities, listen-and-check scripts, and explained solutions.
+- Completed Checkpoint 01's Chapters 1–3 assessment draft; it is explicitly a self-assessment, not an official CEFR score.
+- Added dynamic navigation for authored lesson files, Chapter 2 and 3 print routes, and the four-case grammar handbook page.
+- Recorded the Duden source checks in `SOURCES.md`.
 
 ## Validation results
 
-- Build: attempted with `npm install`; unavailable because `npm` and `node` are not installed (`npm: command not found`).
-- Content structure: static Python scan found 4 lesson files, all with all 12 required sections; 1 partial assessment file. All four have 13 top-level content sections.
-- Content validator: not run; requires Node.js.
-- Browser/PDF inspection: not yet run.
-- External linguistic/telc source check: not yet run.
+- Structural scan (Python, 2026-10-18): **10/10** lesson sources contain all twelve required section labels and at least twelve second-level sections.
+- Chapter 3 content scan: reading texts 125–140 words, 15 vocabulary rows, and 12–14 exercise items per lesson; listening transcripts are behind native reveal controls.
+- Checkpoint scan: numbered items 1–42 are present; answer explanations and a topic-based next-step profile are included.
+- Node validator and Eleventy build: not run locally; Node.js/npm are not installed. User reports the pre-existing deployed version built and works; this batch still needs a GitHub Actions run after push.
+- Browser desktop/mobile and actual PDF inspection: unavailable here. Print routes are HTML for A4 browser printing; no PDF is claimed as verified.
+- Live site check: attempted, but DNS resolution failed in this environment. Current deployment is user-confirmed; the local edits are not assumed deployed.
 
 ## Known issues
 
-- Content currently exists only for four lessons, so the course is not complete.
-- Chapter 1's three lessons are authored, but Checkpoint 01 is not complete until Chapters 2 and 3 are authored and reviewed.
-- The first print views contain authored lessons only; chapter print view cannot yet be a complete chapter.
-- The mistake page currently renders/removes a saved list, but no lesson control yet adds items to it. Flashcards, automatic exercise grading and an incorrect-answer-only review mode are unfinished.
-- Search currently filters curriculum grammar summaries only; the complete verb/vocabulary/grammar search index is unfinished.
-- Answer details are closed in browser print unless opened before printing; confirm actual Chromium behavior and adjust the print strategy.
-- The remote font import needs network access; system sans-serif fallbacks are provided.
-- No Node.js/npm or Chromium/browser binary is installed in the execution environment, blocking the Eleventy build, browser interaction checks and actual PDF inspection.
-- This workspace is not a Git repository, so commit history and a repository-specific Pages deployment target cannot be inspected or verified.
+- 44 lesson sources remain. Chapter 9 has L27; Chapters 4–8 and 10–18 have no lessons yet.
+- The reference index search covers curriculum grammar summaries only, not full reference libraries.
+- Mistake review, flashcards and exercise grading are not fully implemented. Writing and speaking use model answers/rubrics and should not be exact-match graded.
+- Print views and PDF answer visibility have not been tested in an actual browser/PDF renderer. A separately organized solutions edition is unfinished.
+- The diagnostic assessment and current telc format details remain unauthored/unverified.
 
 ## Exact next action
 
-In a Node.js 18+ environment, run `npm install`, build and validate the four-lesson site; fix any source-path, layout, link or print issues that those checks expose. Then author Chapter 2 (L04–L06) and continue the checkpoint toward its full Chapter 1–3 scope. Do not mark Chapter 1 complete until the checkpoint covers all A1 foundations.
+Author L10–L12 as Chapter 4 (Perfekt, Präteritum, and *als* versus *wenn*) with verified verb forms and past-narrative practice. Build that chapter's vocabulary and grammar-reference entries alongside its lessons, then prepare Checkpoint 02 after Chapters 4–6 are complete.

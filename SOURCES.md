@@ -15,3 +15,11 @@ Original learning texts and exercises in this repository are authored for Deutsc
 | [APS retrieval practice review](https://www.psychologicalscience.org/journals/pspi/1529100612453266/) | Review-cycle design context | Not yet checked |
 
 Because external references have not been browsed during this implementation pass, current telc details are not represented as verified here. Verify them against the official telc page before publishing that assessment module.
+
+## Checks completed on 2026-10-18
+
+- [Duden: Kasus erklärt](https://www.duden.de/sprachwissen/sprachratgeber/kasus-erkl%C3%A4rt-deutsche-f%C3%A4lle-bestimmen) — checked for the four case names, question prompts, and case-function examples used in the case handbook and L04–L06.
+- [Duden: Nomen](https://www.duden.de/sprachwissen/fuer-lernende/wortarten-nomen) — checked for article/case paradigms and plural dative formation.
+- [Duden: Präpositionen](https://www.duden.de/sprachwissen/fuer-lernende/wortarten-praepositionen) — checked for governed cases, contractions, and the *wo?* (dative) / *wohin?* (accusative) distinction with place prepositions.
+
+These checks support the specific case and preposition material in L04–L09 and the case handbook. The other listed references, including current telc format details, remain unverified and must be checked before the corresponding sections are authored.

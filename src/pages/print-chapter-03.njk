@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Chapter 03 — Zeit, Wege und Bewegung
+description: Print edition of Chapter 03 lessons.
+permalink: /print/chapter-03/index.html
+---
+<h2>C03 · Zeit, Wege und Bewegung</h2>{% for lesson in collections.lessons %}{% if lesson.data.chapterId == "C03" %}<section class="print-lesson"><div class="lesson"><h1>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h1>{{ lesson.templateContent | safe }}</div></section>{% endif %}{% endfor %}

@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Chapter 02 — Menschen und Gegenstände
+description: Print edition of Chapter 02 lessons.
+permalink: /print/chapter-02/index.html
+---
+<h2>C02 · Menschen und Gegenstände</h2>{% for lesson in collections.lessons %}{% if lesson.data.chapterId == "C02" %}<section class="print-lesson"><div class="lesson"><h1>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h1>{{ lesson.templateContent | safe }}</div></section>{% endif %}{% endfor %}
