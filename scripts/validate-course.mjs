@@ -90,8 +90,8 @@ for (const file of files) {
   }
 }
 
-report.assessmentFiles = (await readdir(path.join(root, 'content/assessments').catch(() => []))).filter(file => file.endsWith('.md')).length;
-report.grammarReferences = (await readdir(path.join(root, 'content/references/grammar').catch(() => []))).filter(file => file.endsWith('.md')).length;
+report.assessmentFiles = (await readdir(path.join(root, 'content/assessments')).catch(() => [])).filter(file => file.endsWith('.md')).length;
+report.grammarReferences = (await readdir(path.join(root, 'content/references/grammar')).catch(() => [])).filter(file => file.endsWith('.md')).length;
 const verbSource = await readFile(path.join(root, 'src/_data/verbs.js'), 'utf8').catch(() => '');
 const verbIds = [...verbSource.matchAll(/\{\s*infinitive:\s*"([^"]+)"/g)].map(match => match[1]);
 report.verbEntries = verbIds.length;
