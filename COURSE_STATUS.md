@@ -17,7 +17,7 @@ Counts come from source files rather than the curriculum map: **10 complete less
 | Verb, vocabulary, expressions references | Lesson-local vocabulary and verb patterns | Searchable verb atlas, thematic vocabulary and expressions libraries, metadata and lesson cross-links |
 | Website and learner tools | Eleventy static HTML; responsive layout; 54-item course map; authored lesson navigation; native answer reveals; browser-local completion; progress export/import; mistake-list view | Full library search; interactive exercise grading and open-answer guidance; flashcards; mistake capture/filter/review |
 | Print | A4 stylesheet; shared Markdown lesson sources; authored textbook view and Chapter 1–3 exports; answer reveal rules for `.solution` blocks | Build and inspect actual PDFs; confirm tables/page breaks/German glyphs; complete reference editions and separately organized solution key |
-| Deployment | Pages site works at `https://dark11957.github.io/GermanB1/`; workflow run [39156072935](https://github.com/dark11957/GermanB1/actions/runs/39156072935) passed build and deploy for commit `885030f`; all new lessons, the case reference, Checkpoint 01, and Chapter 1–3 print routes returned HTTP 200 | Browser visual and PDF checks remain |
+| Deployment | Pages site works at `https://dark11957.github.io/GermanB1/`; workflow run [39156230197](https://github.com/dark11957/GermanB1/actions/runs/39156230197) passed build and deploy for commit `c37cad2`; all new lessons, the case reference, Checkpoint 01, and Chapter 1–3 print routes returned HTTP 200 | Browser visual and PDF checks remain |
 | References | Duden case, noun and preposition pages checked for this batch on 2026-10-18 | Verify CEFR/Goethe benchmarks, research reference, DW listening approach and current telc format before related content is authored |
 
 ## Completed in this batch
@@ -34,7 +34,7 @@ Counts come from source files rather than the curriculum map: **10 complete less
 - Structural scan (Python, 2026-10-18): **10/10** lesson sources contain all twelve required section labels and at least twelve second-level sections.
 - Chapter 3 content scan: reading texts 125–140 words, 15 vocabulary rows, and 12–14 exercise items per lesson; listening transcripts are behind native reveal controls.
 - Checkpoint scan: numbered items 1–42 are present; answer explanations and a topic-based next-step profile are included.
-- Eleventy build and Pages deploy: **passed remotely** in GitHub Actions for `885030f` (run 39156072935). `npm install`, `npm run build`, artifact upload, and `actions/deploy-pages` all succeeded. Local Node.js/npm are not installed, so `npm run validate` was not run here.
+- Eleventy build and Pages deploy: **passed remotely** in GitHub Actions for `c37cad2` (run 39156230197). `npm install`, `npm run build`, artifact upload, and `actions/deploy-pages` all succeeded. Local Node.js/npm are not installed, so `npm run validate` was not run here.
 - Browser desktop/mobile and actual PDF inspection: unavailable here. Print routes are HTML for A4 browser printing; no PDF is claimed as verified.
 - Live route checks after deployment: home, chapter index, L04–L09, case reference, Checkpoint 01, and Chapter 1–3 print routes all returned HTTP 200. L09 and Chapter 3 print output contained the expected headings.
 
