@@ -1,0 +1,7 @@
+---
+layout: base.njk
+title: Chapters
+permalink: /chapters/index.html
+---
+<header class="page-head"><p class="eyebrow">18 CHAPTERS · 54 LESSONS</p><h1>Course chapters</h1><p class="dek">A1 foundations through a B2 transition. Lesson links appear when complete source content exists.</p></header>
+<div class="chapter-grid">{% for chapter in chapters %}<article class="chapter-card"><span>{{ chapter.id }} · {{ chapter.level }}</span><h2>{{ chapter.title }}</h2><p>{{ chapter.theme }}</p><p><strong>Grammar:</strong> {{ chapter.grammar }}</p><ol>{% for lesson in chapter.lessons %}<li>{% if lesson.id == "L01" or lesson.id == "L02" or lesson.id == "L03" or lesson.id == "L27" %}<a href="{{ ('/lessons/' + lesson.id + '/') | url }}">{{ lesson.id }} · {{ lesson.title }}</a> <span class="status complete">Lesson authored</span>{% else %}<span>{{ lesson.id }} · {{ lesson.title }}</span> <span class="status pending">Content not yet authored</span>{% endif %}</li>{% endfor %}</ol></article>{% endfor %}</div>

@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Deutsch Masterclass — Complete Textbook (authored lessons)
+description: Print view of all currently authored lessons.
+permalink: /print/textbook/index.html
+---
+{% for lesson in collections.lessons %}<section class="print-lesson"><div class="lesson"><h1>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h1>{{ lesson.templateContent | safe }}</div></section>{% endfor %}

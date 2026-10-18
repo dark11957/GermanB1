@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Chapter 01 — Deutsch im Alltag
+description: Print edition of the authored Chapter 01 lesson.
+permalink: /print/chapter-01/index.html
+---
+<h2>C01 · Deutsch im Alltag</h2>{% for lesson in collections.lessons %}{% if lesson.data.chapterId == "C01" %}<section class="print-lesson"><div class="lesson"><h1>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h1>{{ lesson.templateContent | safe }}</div></section>{% endif %}{% endfor %}

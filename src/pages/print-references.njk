@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Reference edition
+description: Print view of the current grammar and curriculum index.
+permalink: /print/references/index.html
+---
+{% for chapter in chapters %}<section><h2>{{ chapter.id }} · {{ chapter.title }}</h2><p>{{ chapter.grammar }}</p>{% for lesson in chapter.lessons %}<p>{{ lesson.id }} · {{ lesson.title }}</p>{% endfor %}</section>{% endfor %}

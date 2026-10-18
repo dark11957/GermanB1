@@ -1,0 +1,7 @@
+---
+layout: print.njk
+title: Solutions edition · lesson context
+description: Print view of authored lessons with their answer keys in context.
+permalink: /print/solutions/index.html
+---
+<p>Answer sections are marked within each lesson. This current edition retains lesson context; a separately collated answer key remains to be authored.</p>{% for lesson in collections.lessons %}<section class="print-lesson"><div class="lesson"><h2>{{ lesson.data.lessonId }} · {{ lesson.data.title }}</h2>{{ lesson.templateContent | safe }}</div></section>{% endfor %}
